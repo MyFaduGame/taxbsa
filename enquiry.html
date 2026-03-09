@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a Call - ConsultPro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar (same) -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Consult<span>Pro</span></a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="enquiry.html" class="btn btn-primary">Schedule Call</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section style="background: var(--primary-dark); color: white; padding: 3rem 0; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 2.5rem;">Schedule a Consultation</h1>
+            <p style="opacity: 0.9;">Fill the form below and we'll get back to you within 24 hours</p>
+        </div>
+    </section>
+
+    <!-- Enquiry Form -->
+    <section class="container">
+        <div class="form-container">
+            <form id="enquiryForm">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                    <div class="error-message">This field is required</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number">
+                    <div class="error-message">Please enter a valid phone number</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <div class="error-message">Please enter a valid email</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Preferred Date *</label>
+                    <input type="date" id="date">
+                    <div class="error-message">Please select a date</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Preferred Time *</label>
+                    <input type="time" id="time">
+                    <div class="error-message">Please select a time</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Service Required *</label>
+                    <select id="service">
+                        <option value="">Select a service</option>
+                        <option value="business">Business Consulting</option>
+                        <option value="financial">Financial Advisory</option>
+                        <option value="tax">Tax Consulting</option>
+                        <option value="accounting">Accounting Services</option>
+                        <option value="startup">Startup Consulting</option>
+                        <option value="compliance">Compliance Services</option>
+                    </select>
+                    <div class="error-message">Please select a service</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Tell us about your requirements..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Enquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Same footer as index.html -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>ConsultPro</h3>
+                    <p>Leading Business Consulting & Finance Advisory firm with 15+ years of experience serving 1500+ clients.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="enquiry.html">Schedule Call</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Business Consulting</a></li>
+                        <li><a href="#">Financial Advisory</a></li>
+                        <li><a href="#">Tax Consulting</a></li>
+                        <li><a href="#">Accounting</a></li>
+                        <li><a href="#">Startup Consulting</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone" style="margin-right: 10px;"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope" style="margin-right: 10px;"></i> info@consultpro.com</p>
+                    <p><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> Mumbai, India</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ConsultPro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
